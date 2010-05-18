@@ -17,31 +17,37 @@ In this article I'll be writing code in Gambit-C Scheme.
 Suppose we want to write a macro `ten-times` that runs code ten
 times. We could write it like this:
 
-    (define-macro (ten-times . x)
-      `(let loop ((i 10))
-         ,@x
-         (if (> i 1)
-             (loop (- i 1)))))
+{% highlight scm %}
+(define-macro (ten-times . x)
+  `(let loop ((i 10))
+     ,@x
+     (if (> i 1)
+         (loop (- i 1))))) 
+{% endhighlight %}
 
 And that would work most of the time, for instance
 with `(ten-times (println "Hello"))`. But writing
 
-    (let ((i 3))
-      (ten-times
-       (set! i (+ 1 i))
-       (println "Number: " i)))
+{% highlight scm %}
+(let ((i 3))
+  (ten-times
+   (set! i (+ 1 i))
+   (println "Number: " i))) 
+{% endhighlight %}
 
 results in an infinite loop! This is not good; it breaks
 abstraction. However, this problem is easy to solve with gensyms; we
 can define the macro as
 
-    (define-macro (ten-times . x)
-      (let ((loop-gs (gensym))
-            (i-gs (gensym)))
-        `(let ,loop-gs ((,i-gs 10))
-            ,@x
-            (if (> ,i-gs 1)
-                (,loop-gs (- ,i-gs 1))))))
+{% highlight scm %}
+(define-macro (ten-times . x)
+  (let ((loop-gs (gensym))
+        (i-gs (gensym)))
+    `(let ,loop-gs ((,i-gs 10))
+        ,@x
+        (if (> ,i-gs 1)
+            (,loop-gs (- ,i-gs 1)))))) 
+{% endhighlight %}
 
 The basic idea is that, for each binding that the macro introduces, it
 has to use a generated symbol that is guaranteedly unique.
@@ -52,8 +58,10 @@ this was the only problem with hygiene, there would be no need to
 implement hygienic macro systems. There is, however, another problem
 with `ten-times` above. This code also results in an infinite loop:
 
-    (let ((- +))
-      (ten-times (println "Hello")))
+{% highlight scm %}
+(let ((- +))
+  (ten-times (println "Hello")))
+{% endhighlight %}
 
 Gensyms don't help here. The problem with this is that the code that
 the macro expands to must be able to use library functions and special
