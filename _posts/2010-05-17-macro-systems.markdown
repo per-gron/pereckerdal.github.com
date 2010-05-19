@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Macro systems in Scheme
+categories:
+- scheme
+- lisp
+- macros
 ---
 
 There are several issues that macro systems in Scheme address, and

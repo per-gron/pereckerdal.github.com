@@ -6,6 +6,9 @@ title: Per Eckerdal
 {% for post in site.posts limit:5 %}
 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 {{ post.content }}
-<em>Posted on {{ post.date | date_to_long_string }}.</em>
+<p><em>
+  Posted on {{ post.date | date_to_long_string }}.
+  Categories: {{ post.categories | array_to_sentence_string }}
+</em></p>
 {% endfor %}
 
