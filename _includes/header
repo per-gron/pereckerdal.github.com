@@ -1,4 +1,5 @@
 <h1>{{ page.title }}</h1>
 <p>
-  <a href="http://www.github.com/pereckerdal">Me on GitHub</a>
+  <a href="http://www.github.com/pereckerdal">Me on GitHub</a> |
+  <a href="/atom.xml">Feed (atom)</a>
 </p>
