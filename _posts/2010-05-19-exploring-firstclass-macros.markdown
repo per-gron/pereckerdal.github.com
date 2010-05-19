@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exploring first-class macros
-categories:
+tags:
 - scheme
 - lisp
 - macros

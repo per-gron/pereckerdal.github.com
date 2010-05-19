@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The two faces of the hygiene problem
-categories:
+tags:
 - scheme
 - lisp
 - macros

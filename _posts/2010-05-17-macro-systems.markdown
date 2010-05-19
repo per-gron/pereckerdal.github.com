@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Macro systems in Scheme
-categories:
+tags:
 - scheme
 - lisp
 - macros
