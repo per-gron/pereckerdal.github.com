@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Semi-dynamic typing
+tags:
+- scheme
+- lisp
+- macros
 ---
 
 Different languages have different typing diciplines. There are
