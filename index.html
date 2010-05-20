@@ -8,7 +8,8 @@ title: Per Eckerdal
 {{ post.content }}
 <p><em>
   Posted on {{ post.date | date_to_long_string }}.
-  Categories: {{ post.tags | array_to_sentence_string }}
+  Categories: {{ post.tags | array_to_sentence_string }}.
+  <a href="{{ post.url }}#disqus_thread">Comments</a>.
 </em></p>
 {% endfor %}
 
