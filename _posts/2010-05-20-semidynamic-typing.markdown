@@ -130,10 +130,11 @@ sugar for this, for instance
 {% endhighlight %}
 
 I haven't tried what it feels like to program in this style, or if
-it's possible to write a sufficiently smart compiler (oh we all love
-that term, don't we?), but I think it might be nice to code that way,
-and I think it might be possible to implement a compiler that
-understands this.
+it's possible to write a
+[sufficiently smart compiler](https://c2.com/cgi-bin/wiki?SufficientlySmartCompiler)
+(oh we all love that term, don't we?), but I think it might be nice to
+code that way, and I think it might be possible to implement a
+compiler that understands this.
 
 One interesting property of `assert` is that it is dead easy to add it
 to an existing Scheme implementation; a completely valid (although not
