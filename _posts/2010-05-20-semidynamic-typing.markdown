@@ -170,3 +170,15 @@ good style anyways, if only for documentation purposes, I think the
 compiler will be able to statically find most of the errors that we
 expect to get caught by a semi-strong statically typed language like
 for instance Java.
+
+### Update
+
+I found out about the concept of
+[soft typing](https://c2.com/cgi-bin/wiki?SoftTyping), which is
+closely related to what I describe here. Other interesting links are
+[MrSpidey](http://www.plt-scheme.org/software/mrspidey/),
+[MrFlow](http://www.plt-scheme.org/software/mrflow/), papers about
+set-based analysis
+[here](http://www.cs.rice.edu/CS/PLT/Publications/Scheme/), and
+possibly the references
+[here](http://download.plt-scheme.org/doc/103p1/html/mrspidey/node26.htm).
