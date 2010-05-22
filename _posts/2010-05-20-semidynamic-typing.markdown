@@ -19,7 +19,7 @@ implicit type coercions and/or type casts. In my experience this
 almost invariably leads to needlessly fragile programs. "Which values
 were it that count as false again?" is a question i often ask myself
 when writing Javascript, and bugs that are because I forgot that the
-empty string counts as false and similar is not uncommon.
+empty string counts as false and similar are not uncommon.
 
 I seriously don't get such designs. The fact that I don't have to
 write `str != ''` doesn't make my programs much shorter, easier to

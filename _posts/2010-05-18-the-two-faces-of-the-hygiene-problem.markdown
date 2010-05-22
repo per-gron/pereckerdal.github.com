@@ -79,7 +79,7 @@ in the lexical environment where the macro was defined. They also
 often add special means to break hygiene when the macro writer wants that.
  
 The second might seem unlikely to ever occur; why would anyone want to
-override the meaning of `+`? As I see it, there is primarily one
+override the meaning of `+`? In my experience, there is primarily one
 important case where this happens, and that's when you combine modules
 and macros. Let's say you have a module *A* that imports module *B*
 and exports a macro `mac`. `mac` uses some functions from *B*. If you
