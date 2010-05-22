@@ -15,7 +15,7 @@
   font-weight: bold;
   src: url('../fonts/DroidSans-Bold.ttf');
 }
-.shadow { text-shadow: 2px 2px 4px #cccccc; }
+.shadow { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
 html, body {
   margin: 0;
   padding: 0;
@@ -34,11 +34,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 30px; }
 h2 {
   font-size: 28px;
-  text-shadow: 2px 2px 4px #cccccc;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 h3 {
   font-size: 20px;
-  text-shadow: 2px 2px 4px #cccccc;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 p {
   margin: 0 0 1em 0;
@@ -69,6 +69,7 @@ a:hover { color: #000000; }
   background-image: url(../images/top.jpg);
   height: 320px;
   color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   line-height: 590px;
 }
@@ -99,6 +100,7 @@ a:hover { color: #000000; }
   text-align: center;
   color: #333333;
 }
+#dsq-global-toolbar { display: none; }
 .highlight {
   background: #f4f4f4;
   padding: 0.7em;

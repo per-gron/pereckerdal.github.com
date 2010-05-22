@@ -19,7 +19,7 @@
 
 /*** Less declarations ***/
 .shadow {
-  text-shadow: 2px 2px 4px #ccc;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 
 @light-grey: #f4f4f4;
@@ -100,6 +100,7 @@ a:hover {
     background-image: url(../images/top.jpg);
     height: 320px;
     color: #fff;
+    .shadow;
     text-decoration: none;
     line-height: 590px;
   }
@@ -151,6 +152,12 @@ a:hover {
   color: #333;
 }
 
+
+
+/*** Disqus ***/
+#dsq-global-toolbar {
+  display: none;
+}
 
 
 /*** Syntax highlighting ***/
