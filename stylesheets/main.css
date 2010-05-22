@@ -55,11 +55,11 @@ pre, code {
 a:link { color: #990000; }
 a:visited { color: #770000; }
 a:hover { color: #000000; }
-.top_block h1 {
+#top_block h1 {
   margin: 0 0 0 0;
   padding: 0;
 }
-.top_block h1 a {
+#top_block h1 a {
   margin-top: -50px;
   -webkit-transition-property: background-position;
   -webkit-transition-duration: 0.1s;
@@ -73,7 +73,7 @@ a:hover { color: #000000; }
   text-decoration: none;
   line-height: 590px;
 }
-.top_block h1 a:hover { background-position: 0px 4px; }
+#top_block h1 a:hover { background-position: 0px 4px; }
 .post_list {
   margin: 0;
   padding: 0;
@@ -93,14 +93,14 @@ a:hover { color: #000000; }
 .post_list .post a .posted { font-style: italic; }
 .post_list .post a:hover .title { color: #990000; }
 .post_list .post:nth-child(even) a { background-color: #f4f4f4; }
-.footer_block {
+#related h2 { margin-top: 1.5em; }
+#footer_block {
   margin-top: 1em;
   padding: 0.7em;
   font-size: 0.8em;
   text-align: center;
   color: #333333;
 }
-#dsq-global-toolbar { display: none; }
 .highlight {
   background: #f4f4f4;
   padding: 0.7em;
