@@ -92,6 +92,13 @@ a:hover { color: #000000; }
 .post_list .post a .posted { font-style: italic; }
 .post_list .post a:hover .title { color: #990000; }
 .post_list .post:nth-child(even) a { background-color: #f4f4f4; }
+.footer_block {
+  margin-top: 1em;
+  padding: 0.7em;
+  font-size: 0.8em;
+  text-align: center;
+  color: #333333;
+}
 .highlight {
   background: #f4f4f4;
   padding: 0.7em;

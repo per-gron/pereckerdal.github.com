@@ -1,3 +1,4 @@
+/*** Fonts ***/
 @font-face {
   font-family: HeaderFont;
   src: url('../fonts/Reznor-Bold.ttf');
@@ -16,12 +17,14 @@
   src: url('../fonts/DroidSans-Bold.ttf');
 }
 
+/*** Less declarations ***/
 .shadow {
   text-shadow: 2px 2px 4px #ccc;
 }
 
 @light-grey: #f4f4f4;
 
+/*** Basic layout and typography ***/
 html, body {
   margin: 0;
   padding: 0;
@@ -81,6 +84,8 @@ a:hover {
   color: #000;
 }
 
+/*** Layout ***/
+
 .top_block h1 {
   margin: 0 0 0 0;
   padding: 0;
@@ -137,9 +142,18 @@ a:hover {
   }
 }
 
+.footer_block {
+  margin-top: 1em;
+  padding: .7em;
+  
+  font-size: .8em;
+  text-align: center;
+  color: #333;
+}
 
 
 
+/*** Syntax highlighting ***/
 .highlight  {
   background: @light-grey;
   padding: .7em;
