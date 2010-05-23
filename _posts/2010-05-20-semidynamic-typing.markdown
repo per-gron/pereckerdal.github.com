@@ -186,3 +186,13 @@ set-based analysis
 [here](http://www.cs.rice.edu/CS/PLT/Publications/Scheme/), and
 possibly the references
 [here](http://download.plt-scheme.org/doc/103p1/html/mrspidey/node26.htm).
+
+Another update: I have found that a tool for typing has been developed
+for Erlang which is based on what they call success typing, see the
+paper
+[*Practical Type Inference Based on Success Typings*](http://www.it.uu.se/research/group/hipe/publications.shtml). This
+is interesting to me for two reasons: The first is that the algorithm
+that they describe is very (as in almost identical) to a type
+inference algorithm I implemented for a toy language I played with a
+while ago. The second is that this paper is written by people at
+Uppsala Universitet, the university of the town where I live.
