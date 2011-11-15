@@ -1,0 +1,17 @@
+---
+layout: default
+title: Per Eckerdal
+---
+
+<ul class="post_list">
+  {% for post in site.posts limit:5 %}
+    <li class="post"><a href="{{ post.url }}">
+      <span class="title">{{ post.title }}</span>
+      <span class="posted">
+        Posted on {{ post.date | date_to_long_string }}.
+      </span>
+      <!--Tags: {{ post.tags | array_to_sentence_string }}. 
+      <a href="{{ post.url }}#disqus_thread">Comments</a>.-->
+   </a></li>
+  {% endfor %}
+</ul>
