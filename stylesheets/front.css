@@ -27,8 +27,15 @@ body {
 }
 
 #info img {
-  margin: 170px 0 0 200px;
+  top: 50%;
   position: absolute;
+}
+
+#info img {
+  display: block;
+  position: absolute;
+  margin: -179px 0 0 200px;
+  border: 0;
 }
 
 #pic {
