@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hygienic Lisp-1 macros that don't require a PhD to understand
+title: Symple hygienic Lisp-1 macros
 tags:
 - scheme
 - lisp
